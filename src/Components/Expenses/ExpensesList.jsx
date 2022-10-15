@@ -12,7 +12,10 @@ function ExpensesList({ items }) {
         <ExpenseItem
           key={expense.id}
           title={expense.title}
-          amount={expense.amount}
+          amount={expense.amount.toLocaleString('en-US', {
+            style: 'currency',
+            currency: 'USD',
+          })}
           date={expense.date}
         />
       ))}
