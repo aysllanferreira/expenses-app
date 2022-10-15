@@ -1,13 +1,13 @@
-import ExpenseDate from "./ExpenseDate";
-import Card from "../UI/Card";
-import "./ExpenseItem.css";
-import { useState } from "react";
+import ExpenseDate from './ExpenseDate';
+import Card from '../UI/Card';
+import './ExpenseItem.css';
+import { useState } from 'react';
 
 const ExpenseItem = ({ title, amount, date }) => {
   const [titleState, setTitleState] = useState(title);
 
   const handleClick = () => {
-    setTitleState("Updated!");
+    setTitleState('Updated!');
   };
 
   return (

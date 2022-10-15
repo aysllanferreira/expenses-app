@@ -1,4 +1,4 @@
-import "./Card.css";
+import './Card.css';
 
 const Card = ({ children, className, id }) => {
   const classes = `card ${className}`;

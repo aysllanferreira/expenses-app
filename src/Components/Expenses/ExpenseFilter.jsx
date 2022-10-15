@@ -1,4 +1,4 @@
-import "./ExpenseFilter.css";
+import './ExpenseFilter.css';
 
 const ExpensesFilter = ({ onChangeFilter, selected }) => {
   const handleChange = (event) => {
