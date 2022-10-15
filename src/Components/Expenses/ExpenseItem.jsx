@@ -3,7 +3,7 @@ import Card from '../UI/Card'
 import './ExpenseItem.css'
 import { useState } from 'react'
 
-const ExpenseItem = ({ id, title, amount, date }) => {
+const ExpenseItem = ({ title, amount, date }) => {
 
   const [titleState, setTitleState] = useState(title);
 
@@ -12,7 +12,7 @@ const ExpenseItem = ({ id, title, amount, date }) => {
   }
   
   return (
-    <Card id={id} className='expense-item'>
+    <Card className='expense-item'>
       <ExpenseDate date={date} />
       <div className='expense-item__description'>
         <h2>{titleState}</h2>
