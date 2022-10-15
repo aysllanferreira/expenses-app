@@ -22,6 +22,12 @@ const App = () => {
       amount: 450,
       date: new Date(2021, 5, 12),
     },
+    {
+      id: 'e5',
+      title: 'Book on the Table',
+      amount: 622.50,
+      date: new Date(2022, 6, 22),
+    },
   ];
 
   return (
