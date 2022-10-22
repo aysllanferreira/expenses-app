@@ -6,10 +6,6 @@ import { useState } from 'react';
 const ExpenseItem = ({ title, amount, date }) => {
   const [titleState, setTitleState] = useState(title);
 
-  const handleClick = () => {
-    setTitleState('Updated!');
-  };
-
   return (
     <li>
       <Card className="expense-item">
@@ -17,7 +13,6 @@ const ExpenseItem = ({ title, amount, date }) => {
         <div className="expense-item__description">
           <h2>{titleState}</h2>
           <div className="expense-item__price">{amount}</div>
-          <button onClick={handleClick}>Change Title</button>
         </div>
       </Card>
     </li>
